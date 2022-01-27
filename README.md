@@ -1,6 +1,15 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
 
 Welcome JJNod88,
+
+
+# Quiz Game
+* Using Python I will create a webbased Quiz that users can run
+* The idea of the game will be for educational purposes, whilst providing some enjoyment  
+
+
+
+
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
