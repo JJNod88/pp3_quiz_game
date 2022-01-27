@@ -16,14 +16,6 @@ def main_quiz():
 
 
 
-
-def answers():
-    """
-    I will include my answers here and link to my main game
-    """
-    pass
-
-
 # dictionary of questions the game will be asking,
 
 quiz_questions = [
