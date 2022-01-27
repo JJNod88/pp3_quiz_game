@@ -3,10 +3,11 @@
 Welcome JJNod88,
 
 
-# Quiz Game
-* Using Python I will create a webbased Quiz that users can run
+# Quiz Game - Where Am I
+* Using Python I will create a web-based Quiz that users can run
 * The idea of the game will be for educational purposes, whilst providing some enjoyment  
-
+* I will provide a set of questions with some possible answers. The users will choose which option they believe is the correct answer.
+* 
 
 
 
