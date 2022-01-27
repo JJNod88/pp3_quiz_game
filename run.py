@@ -14,9 +14,9 @@ def main_quiz():
         print("All you have to do is select 'a', 'b', 'c', or 'd'")
         print('You got thios. Good Luck)')
 
+main_quiz()
 
-
-# dictionary of questions the game will be asking,
+# dictionary of questions the game will be asking
 
 quiz_questions = [
     {"Question": "Location of the tallest human built structure in the world.\nWhere am I?: ",
