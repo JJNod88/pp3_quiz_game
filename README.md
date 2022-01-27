@@ -12,6 +12,16 @@ Welcome JJNod88,
 
 
 
+
+
+
+
+# Bugs
+* I cant use my variable elsewhere
+    * Fix - I added global to the variable name in my intro function
+
+
+
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
 ## Reminders

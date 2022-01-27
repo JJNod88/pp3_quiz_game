@@ -2,6 +2,7 @@ def main_quiz():
     """
     This is where my Quiz will start.
     """
+    global user_name 
     user_name = input("Hey, please enter your name:")
 
     while user_name == "" or user_name == " ":
