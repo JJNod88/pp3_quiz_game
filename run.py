@@ -93,6 +93,12 @@ quiz_questions = [
 ]
 
 
+def result():
+    """
+    This will print a thank you, and i will add the score here once i have done the coding for it.
+    """
+    print('Well done! you completed the quiz!')
+
 def append_reccomend():
     """
     At the end of the quiz, I will give the user an opportunity to recommend a question or provide feedback
@@ -102,3 +108,4 @@ def append_reccomend():
 
 hello()
 main_quiz(quiz_questions)
+result()
