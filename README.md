@@ -1,19 +1,20 @@
-
-
-Welcome JJNod88,
-
-
 # Quiz Game - Where Am I
 * Using Python I will create a web-based Quiz that users can run
 * The idea of the game will be for educational purposes, whilst providing some enjoyment  
 * I will provide a set of questions with some possible answers. The users will choose which option they believe is the correct answer.
-* 
 
 
-
-
-
-
+# Functions
+* I am using heroku to provide the cloud platform to allow users to run the programme
+    * This allows user input and interactivity
+* The quiz asks for the users name, and uses this to interact with the User
+* There are multiple choice questions, each with 4 choices
+    * 1 answer is correct, 3 are incorrect
+    * The programme provides feedback to the user on whethern they were correct or not
+* There is a score incrimentor that collates the score, and provides feedback to the User
+* TBC - The user is then prompted to recommend a new question or provide feedback
+    * this will then API through to a google sheets for quiz improvements 
+* The user will have the opportunity to play again or end the game 
 
 
 # Bugs
@@ -34,30 +35,9 @@ Welcome JJNod88,
 * Have added a score variable that incriments when a correct score is answered. Says undefined in the f statement in my result function.
     * I was calling the function outside of the main quiz function. I called it with the for statement and it worked
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
-## Reminders
+# Credits 
+* 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
