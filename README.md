@@ -31,6 +31,8 @@ Welcome JJNod88,
     * i was also missing the 'i' for my iteration. 
 * If i put a capital letter in, it didnt accept the result
     * I added .lower on the user input 
+* Have added a score variable that incriments when a correct score is answered. Says undefined in the f statement in my result function.
+    * I was calling the function outside of the main quiz function. I called it with the for statement and it worked
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 

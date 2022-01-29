@@ -27,8 +27,10 @@ def main_quiz(quiz_questions):
     It then provides feedback on whether the user was correct or not.
     I will add scoring calculator and feedback. 
     """
+    score_incriment = 0
     for i in quiz_questions:
         answer = ''
+
         while answer not in ['a', 'b', 'c', 'd']:
             print(i['question'])
             for key, value in i['choices'].items():
@@ -37,14 +39,16 @@ def main_quiz(quiz_questions):
             answer = input('Please pick your answer\n').lower()
 
             if answer not in i['choices']:
-                print('Sorry, only the letters a, b, c, d are accepted\n')
+                print('Sorry, only the letters a, b, c, d are accepted. Try again.\n')
 
         if answer == i['correct_choice']:
             print('Correct! Well done.\n')
-        
+            score_incriment += 1
         else:
             print('Oh no, that was incorrect.\n')
-            
+        
+    result(score_incriment)
+
 
 # Dictionary of questions the game will be asking
 quiz_questions = [
@@ -53,51 +57,52 @@ quiz_questions = [
                 "b": "Hong Kong",
                 "c": "Dubai",
                 "d": "Abu Dhabi"},
-    "correct_choice": "c"},
+                "correct_choice": "c"},
     {"question": "A group of Pyramids beginning with the letter 'G'.\nWhich Country are they in?: ",
     "choices": {"a": "Mexico",
                 "b": "placeholder",
                 "c": "placeholder",
                 "d": "Egypt"},
-    "correct_choice": "d"},
+                "correct_choice": "d"},
     {"question": "I am on the set of Game of Thrones. Which country am I in?: ",
     "choices": {"a": "New Zealand",
                 "b": "Ireland",
                 "c": "Scotland",
                 "d": "Denmark"},
-    "correct_choice": "b"},
-    {"question": "I am north of Italy, South of Sweden. My Capital City begins with a B.\nWhat City am i in?: ",
+                "correct_choice": "b"},
+    {"question": "I am north of Italy, South of Sweden. My Capital City begins with a B.\nWhat City am I in?: ",
     "choices": {"a": "Poland",
                 "b": "Germany",
                 "c": "Bulgaria",
                 "d": "France"},
-    "correct_choice": "b"},
+                "correct_choice": "b"},
     {"question": "I am in the USA. My state is famously known for my Canyon.\nWhat City am I in?: ",
     "choices": {"a": "Arizona",
                 "b": "Texas",
                 "c": "California",
                 "d": "Florida"},
-    "correct_choice": "a"},
+                "correct_choice": "a"},
     {"question": "'Fondue' is famously recognised for which Country?: '",
     "choices": {"a": "Belgium",
                 "b": "France",
                 "c": "Switzerland",
                 "d": "Sweden"},
-    "correct_choice": "c"},
-    {"question": "If I was sailing between the UK and USA, what Sea am i in?: ",
+                "correct_choice": "c"},
+    {"question": "If I was sailing between the UK and USA, what Sea am I in?: ",
     "choices": {"a": "Atlantic.",
                 "b": "Pacific.",
                 "c": "Indian.",
                 "d": "Arctic."},
-    "correct_choice": "a"},
+                "correct_choice": "a"},
 ]
 
 
-def result():
+def result(score_incriment):
     """
     This will print a thank you, and i will add the score here once i have done the coding for it.
     """
-    print('Well done! you completed the quiz!')
+    print(f'Well done! You completed the quiz with a score of {score_incriment}!')
+
 
 def append_reccomend():
     """
@@ -108,4 +113,3 @@ def append_reccomend():
 
 hello()
 main_quiz(quiz_questions)
-result()
