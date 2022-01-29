@@ -28,7 +28,10 @@ Welcome JJNod88,
     * Also - i was using != and == to check for my answers which was causing a problem. I used 'not in' which worked
 * My quiz is now running - however, it is not picking up the correct answers. any ketter gives a try again
     * I need to add the final if/else to check if the answer was correct
-    
+    * i was also missing the 'i' for my iteration. 
+* If i put a capital letter in, it didnt accept the result
+    * I added .lower on the user input 
+
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
 ## Reminders

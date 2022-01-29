@@ -1,6 +1,8 @@
 def hello():
     """
     This is where my Quiz will start.
+    Collects users name with an input.
+    While loop ensures they type a word in.
     """
     global user_name 
     user_name = input("Hey, please enter your name:")
@@ -25,7 +27,7 @@ def main_quiz(quiz_questions):
             for key, value in i['choices'].items():
                 print(f' {key} : {value}')
 
-            answer = input('Please pick your answer\n')
+            answer = input('Please pick your answer\n').lower()
 
             if answer not in i['choices']:
                 print('Sorry, only the letters a, b, c, d are accepted\n')
