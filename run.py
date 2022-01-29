@@ -5,8 +5,9 @@ def hello():
     While loop ensures they type a word in.
     """
     global user_name 
-    user_name = input("Hey, please enter your name:")
+    user_name = input("Hey, please enter your name: \n")
 
+    # If the user name leaves this blank, it prompts them to enter
     while user_name == "" or user_name == " ":
         print('Oops, please enter your name')
         user_name = input("Hey, please enter your name:")
@@ -14,12 +15,16 @@ def hello():
         print(f'Hey {user_name}, Lets test your knowledge of the world')
         print('We have a range of questions for you to go at')
         print("All you have to do is select 'a', 'b', 'c', or 'd'")
-        print('You got this. Good Luck')
+        print('You got this. Good Luck\n')
 
 
 def main_quiz(quiz_questions):
     """
     Main function of the game - this iterates through my quiz questions
+    First statement provides the questions and the list to choose from.
+    The input allows both lower and upper case choices.
+    It then provides feedback on whether the user was correct or not.
+    I will add scoring calculator and feedback. 
     """
     for i in quiz_questions:
         answer = ''
@@ -40,11 +45,8 @@ def main_quiz(quiz_questions):
         else:
             print('Oh no, that was incorrect.\n')
             
-# dictionary of questions the game will be asking
 
-
-
-
+# Dictionary of questions the game will be asking
 quiz_questions = [
     {"question": "Location of the tallest human built structure in the world.\nWhere am I?: ",
     "choices": {"a": "Japan",
@@ -91,11 +93,10 @@ quiz_questions = [
 ]
 
 
-
-
 def append_reccomend():
     """
-    At the end of the quiz, i will give the user an opportunity to recommend a question or provide feedback
+    At the end of the quiz, I will give the user an opportunity to recommend a question or provide feedback
+    It will send the information to a google sheets so i can add these later
     """
 
 
