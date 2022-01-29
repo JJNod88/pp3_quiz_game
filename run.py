@@ -1,4 +1,4 @@
-def main_quiz():
+def hello():
     """
     This is where my Quiz will start.
     """
@@ -12,9 +12,15 @@ def main_quiz():
         print(f'Hey {user_name}, Lets test your knowledge of the world')
         print('We have a range of questions for you to go at')
         print("All you have to do is select 'a', 'b', 'c', or 'd'")
-        print('You got thios. Good Luck)')
+        print('You got this. Good Luck)')
 
-main_quiz()
+
+def main_quiz():
+    """
+    Main function of the game - this iterates through my quiz questions
+    """
+
+
 
 # dictionary of questions the game will be asking
 
@@ -62,3 +68,17 @@ quiz_questions = [
                 "d": "Arctic."},
     "correct Answer": "a"},
 ]
+
+
+
+
+
+
+def append_reccomend():
+    """
+    At the end of the quiz, i will give the user an opportunity to recommend a question or provide feedback
+    """
+
+
+
+hello()
