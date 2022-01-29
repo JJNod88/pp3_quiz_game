@@ -22,7 +22,6 @@ def main_quiz(quiz_questions):
     for i in quiz_questions:
         answer = ''
         while answer not in ['a', 'b', 'c', 'd']:
-            print('try again')
             for key, value in i['choices'].items():
                 print(f' {key} : {value}')
 
@@ -31,7 +30,11 @@ def main_quiz(quiz_questions):
             if answer not in i['choices']:
                 print('Sorry, only the letters a, b, c, d are accepted\n')
 
+        if answer == i['correct_choice']:
+            print('Correct! Well done.\n')
 
+        else:
+            print('Oh no, that was incorrect.\n')
             
 # dictionary of questions the game will be asking
 
@@ -41,43 +44,43 @@ quiz_questions = [
                 "b": "Hong Kong",
                 "c": "Dubai",
                 "d": "Abu Dhabi"},
-    "correct Answer": "c"},
+    "correct_choice": "c"},
     {"Question": "A group of Pyramids beginning with the letter 'G'.\nWhich Country are they in?: ",
     "choices": {"a": "Mexico",
                 "b": "placeholder",
                 "c": "placeholder",
                 "d": "Egypt"},
-    "correct Answer": "d"},
+    "correct_choice": "d"},
     {"Question": "I am on the set of Game of Thrones. Which country am I in?: ",
     "choices": {"a": "New Zealand",
                 "b": "Ireland",
                 "c": "Scotland",
                 "d": "Denmark"},
-    "correct Answer": "b"},
+    "correct_choice": "b"},
     {"Question": "I am north of Italy, South of Sweden. My Capital City begins with a B.\nWhat City am i in?: ",
     "choices": {"a": "Poland",
                 "b": "Germany",
                 "c": "Bulgaria",
                 "d": "France"},
-    "correct Answer": "b"},
+    "correct_choice": "b"},
     {"Question": "I am in the USA. My state is famously known for my Canyon.\nWhat City am I in?: ",
     "choices": {"a": "Arizona",
                 "b": "Texas",
                 "c": "California",
                 "d": "Florida"},
-    "correct Answer": "a"},
+    "correct_choice": "a"},
     {"Question": "'Fondue' is famously recognised for which Country?: '",
     "choices": {"a": "Belgium",
                 "b": "France",
                 "c": "Switzerland",
                 "d": "Sweden"},
-    "correct Answer": "c"},
+    "correct_choice": "c"},
     {"Question": "If I was sailing between the UK and USA, what Sea am i in?: ",
     "choices": {"a": "Atlantic.",
                 "b": "Pacific.",
                 "c": "Indian.",
                 "d": "Arctic."},
-    "correct Answer": "a"},
+    "correct_choice": "a"},
 ]
 
 

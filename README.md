@@ -27,7 +27,8 @@ Welcome JJNod88,
     * I didnt add the quiz_questions into the paramenet
     * Also - i was using != and == to check for my answers which was causing a problem. I used 'not in' which worked
 * My quiz is now running - however, it is not picking up the correct answers. any ketter gives a try again
-
+    * I need to add the final if/else to check if the answer was correct
+    
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
 ## Reminders
