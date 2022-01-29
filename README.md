@@ -23,8 +23,10 @@ Welcome JJNod88,
     * I had '()' in my quiz_questions, its not a function. Just removed brackets
 * Trying to iterate through my list - removed (), it now says not enough values to unpack
     * I hadnt added the .items() function, which is used to return the keys and values - it also ran for ever as I hadnt closed the while loop
-* Added a main_quisz function to provide the mulptiple choice. When i run, nothing is happening other than the hello function. 
-
+* Added a main_quiz function to provide the mulptiple choice. When i run, nothing is happening other than the hello function. 
+    * I didnt add the quiz_questions into the paramenet
+    * Also - i was using != and == to check for my answers which was causing a problem. I used 'not in' which worked
+* My quiz is now running - however, it is not picking up the correct answers. any ketter gives a try again
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 

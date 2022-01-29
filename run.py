@@ -21,14 +21,14 @@ def main_quiz(quiz_questions):
     """
     for i in quiz_questions:
         answer = ''
-        while answer == ['a', 'b', 'c', 'd']:
+        while answer not in ['a', 'b', 'c', 'd']:
             print('try again')
             for key, value in i['choices'].items():
                 print(f' {key} : {value}')
 
             answer = input('Please pick your answer\n')
 
-            if answer != i['choices']:
+            if answer not in i['choices']:
                 print('Sorry, only the letters a, b, c, d are accepted\n')
 
 
