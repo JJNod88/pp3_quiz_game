@@ -19,7 +19,11 @@ Welcome JJNod88,
 # Bugs
 * I cant use my variable elsewhere
     * Fix - I added global to the variable name in my intro function
-
+* Trying to iterate through my list - says it list object is not callable
+    * I had '()' in my quiz_questions, its not a function. Just removed brackets
+* Trying to iterate through my list - removed (), it now says not enough values to unpack
+    * I hadnt added the .items() function, which is used to return the keys and values - it also ran for ever as I hadnt closed the while loop
+* Added a main_quisz function to provide the mulptiple choice. When i run, nothing is happening other than the hello function. 
 
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
