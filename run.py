@@ -5,17 +5,18 @@ def hello():
     While loop ensures they type a word in.
     """
     global user_name 
-    user_name = input("Hey, please enter your name: \n")
+    user_name = input("Hey, please enter your name: ")
+    print('\n')
 
     # If the user name leaves this blank, it prompts them to enter
     while user_name == "" or user_name == " ":
         print('Oops, please enter your name')
         user_name = input("Hey, please enter your name:")
     else: 
-        print(f'Hey {user_name}, Lets test your knowledge of the world')
-        print('We have a range of questions for you to go at')
-        print("All you have to do is select 'a', 'b', 'c', or 'd'")
-        print('You got this. Good Luck\n')
+        print(f'Hey {user_name}, Lets test your knowledge of the world!')
+        print('We have a range of questions for you to asnwer.')
+        print("All you have to do is select 'a', 'b', 'c', or 'd'.")
+        print('You got this. Good Luck.\n')
 
 
 def main_quiz(quiz_questions):
@@ -41,7 +42,6 @@ def main_quiz(quiz_questions):
         if answer == i['correct_choice']:
             print('Correct! Well done.\n')
         
-
         else:
             print('Oh no, that was incorrect.\n')
             
