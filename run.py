@@ -64,7 +64,7 @@ def main_quiz(quiz_questions):
             score_incriment += 1
         else:
             print('Oh no, that was incorrect.\n')
-        
+                   
     result(score_incriment)
 
 
