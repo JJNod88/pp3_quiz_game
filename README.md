@@ -36,6 +36,10 @@
     * I was calling the function outside of the main quiz function. I called it with the for statement and it worked
 * Imported google sheets for user feedback however error because the sheet is underfined
     * I hadn't linked the worksheet, i had duplicated the name of the actual Google Sheets
+* In my append function - Input is working fine, however the append is not working, no attribute 'append'
+    *   
+
+
 
 # Credits 
 * 

@@ -13,7 +13,7 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('pp3_project')
 
-user_feedback = SHEET.worksheet('UserFeedback')
+user_feedback = SHEET.worksheet('userFeedback')
 
 
 def hello():
@@ -64,7 +64,7 @@ def main_quiz(quiz_questions):
             score_incriment += 1
         else:
             print('Oh no, that was incorrect.\n')
-                   
+
     result(score_incriment)
 
 
@@ -117,17 +117,24 @@ quiz_questions = [
 
 def result(score_incriment):
     """
-    This will print a thank you, and i will add the score here once i have done the coding for it.
+    This will print a thank you, and i will add the score here once i have done
+    the coding for it.
     """
     print(f'Well done! You completed the quiz with a score of {score_incriment}!')
 
 
-def append_reccomend():
+def append_recommend(user_feedback):
     """
-    At the end of the quiz, I will give the user an opportunity to recommend a question or provide feedback
+    At the end of the quiz, I will give the user an opportunity to recommend a 
+    question or provide feedback.
     It will send the information to a google sheets so i can add these later
     """
+    print('Hey, please leave a question recommendation or feedback here.\n')
+    user_input_feedback = input('Please enter here.\n') 
+    update_worksheet = SHEET.worksheet('userFeedback')
+    update_worksheet.append_row(user_input_feedback)
 
 
 hello()
 main_quiz(quiz_questions)
+append_recommend('UserFeedback')
