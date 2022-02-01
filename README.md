@@ -34,7 +34,8 @@
     * I added .lower on the user input 
 * Have added a score variable that incriments when a correct score is answered. Says undefined in the f statement in my result function.
     * I was calling the function outside of the main quiz function. I called it with the for statement and it worked
-
+* Imported google sheets for user feedback however error because the sheet is underfined
+    * I hadn't linked the worksheet, i had duplicated the name of the actual Google Sheets
 
 # Credits 
 * 
