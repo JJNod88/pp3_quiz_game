@@ -9,9 +9,19 @@
     * This allows user input and interactivity
 * The quiz asks for the users name, and uses this to interact with the User
 * There are multiple choice questions, each with 4 choices
+    * 3. Could store the dictionary in Google Sheets and add the new code in the questions (idea)
     * 1 answer is correct, 3 are incorrect
-    * The programme provides feedback to the user on whethern they were correct or not
+    * The programme provides feedback to the user on whether they were correct or not
+
+* 1. Randomise questions and make it so only one answer can be asked per round (idea)
+
 * There is a score incrimentor that collates the score, and provides feedback to the User
+
+    * 2. Keep track of score per user (idea)
+    * new work sheet 
+    * google sheets finds the username
+    * updates worksheet
+
 * TBC - The user is then prompted to recommend a new question or provide feedback
     * this will then API through to a google sheets for quiz improvements 
 * The user will have the opportunity to play again or end the game 
