@@ -47,12 +47,13 @@
 * Imported google sheets for user feedback however error because the sheet is underfined
     * I hadn't linked the worksheet, i had duplicated the name of the actual Google Sheets
 * In my append function - Input is working fine, however the append is not working, no attribute 'append'
-    *   
+    *   In my function, my code to append the user input was correct, however i was not providing the input information as an array. So, i added brackets to create an array and it worked:
+    update_worksheet.append_row( *[* user_input_feedback *]* )
 
 
 
 # Credits 
-* 
+* Mentor, dickV_mentor - Spotted that in my append function, i was not providing the google sheets with an array, so i added brackets, and my function worked correctly. 
 
 
 
