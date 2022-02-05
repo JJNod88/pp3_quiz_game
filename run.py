@@ -1,6 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials 
-
+import random
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -37,7 +37,7 @@ def hello():
         print('You got this. Good Luck.\n')
 
 
-def main_quiz(quiz_questions):
+def main_quiz(list):
     """
     Main function of the game - this iterates through my quiz questions
     First statement provides the questions and the list to choose from.
@@ -46,7 +46,7 @@ def main_quiz(quiz_questions):
     I will add scoring calculator and feedback. 
     """
     score_incriment = 0
-    for i in quiz_questions:
+    for i in list:
         answer = ''
 
         while answer not in ['a', 'b', 'c', 'd']:
@@ -113,6 +113,11 @@ quiz_questions = [
                 "d": "Arctic."},
                 "correct_choice": "a"},
 ]
+
+
+# randomising quiz questions
+list = quiz_questions
+random.shuffle(list)
 
 
 def result(score_incriment):
