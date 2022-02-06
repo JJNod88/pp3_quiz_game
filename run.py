@@ -43,7 +43,7 @@ def main_quiz(list):
     First statement provides the questions and the list to choose from.
     The input allows both lower and upper case choices.
     It then provides feedback on whether the user was correct or not.
-    I will add scoring calculator and feedback. 
+    It incriments the score depending on the users answer.
     """
     score_incriment = 0
     for i in list:
@@ -67,8 +67,11 @@ def main_quiz(list):
 
     result(score_incriment)
 
-
-# Dictionary of questions the game will be asking
+"""
+Dictionary of questions the game will be asking.
+Questions and Choices have been used in my main quiz to iterate through them
+This dictionary has been converted into a list for randomising
+"""
 quiz_questions = [
     {"question": "Location of the tallest human built structure in the world.\nWhere am I?: ",
     "choices": {"a": "Japan",
@@ -122,8 +125,9 @@ random.shuffle(list)
 
 def result(score_incriment):
     """
-    This will print a thank you, and i will add the score here once i have done
-    the coding for it.
+    This provides the user with their score following the quiz.
+    It also sends the username and their score to Google sheets 
+    which will be used for future functionality.
     """
     print(f'Well done! You completed the quiz with a score of {score_incriment}!')
     
@@ -135,9 +139,9 @@ def result(score_incriment):
 
 def append_recommend(user_feedback):
     """
-    At the end of the quiz, I will give the user an opportunity to recommend a 
+    At the end of the quiz, the user is prompted to recommend a 
     question or provide feedback.
-    It will send the information to a google sheets so i can add these later
+    This feeds back into the pp3 google sheets for data capture 
     """
     print('Hey, please leave a question recommendation or feedback here.\n')
     user_input_feedback = input('Please enter here.\n') 
