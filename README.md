@@ -57,8 +57,10 @@
 * In my append function - Input is working fine, however the append is not working, no attribute 'append'
     *   In my function, my code to append the user input was correct, however i was not providing the input information as an array. So, i added brackets to create an array and it worked:
     update_worksheet.append_row( *[* user_input_feedback *]* )
-
-
+* Appending my score to the new worksheet userScore. I am getting the bug to say invalid values
+    * I changed to an f statement and captured the data from the global user_name which gets input at beginning
+* Trying to append two bits of information in two columns, at the moment, my score is being appending in the row below the name, i want them side by side
+    * I was putting brackets round both variables, i removed the duplication and put them in the same array. 
 
 # Credits 
 * Mentor, dickV_mentor - Spotted that in my append function, i was not providing the google sheets with an array, so i added brackets, and my function worked correctly. 

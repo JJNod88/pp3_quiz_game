@@ -23,7 +23,7 @@ def hello():
     While loop ensures they type a word in.
     """
     global user_name 
-    user_name = input("Hey, please enter your name: ")
+    user_name = input("Hey, please enter your username: ")
     print('\n')
 
     # If the user name leaves this blank, it prompts them to enter
@@ -126,6 +126,11 @@ def result(score_incriment):
     the coding for it.
     """
     print(f'Well done! You completed the quiz with a score of {score_incriment}!')
+    
+    userscore_name = (f'{user_name}')
+    userscore_score = (f'{score_incriment}')
+    update_worksheetTwo = SHEET.worksheet('userScore')
+    update_worksheetTwo.append_row([userscore_name, userscore_score])
 
 
 def append_recommend(user_feedback):
