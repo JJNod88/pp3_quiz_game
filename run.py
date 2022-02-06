@@ -32,10 +32,30 @@ def hello():
         user_name = input("Hey, please enter your name:")
     else: 
         print(f'Hey {user_name}, Lets test your knowledge of the world!')
-        print('We have a range of questions for you to asnwer.')
+        print('We have a range of questions for you to asnwer.\n')
         print("All you have to do is select 'a', 'b', 'c', or 'd'.")
         print('You got this. Good Luck.\n')
+           
 
+def begin():
+    """
+    Give the user the option to start the game or not
+    """
+    print(f'So {user_name}, are you ready to play?\n')
+    
+    start = True
+    
+    while start:
+        start_game = input('Please type "y" or "n"\n').lower()
+
+        if start_game == 'y':
+            print("Great, let's begin\n")
+            break
+        elif start_game == 'n':
+            print('No problem, in your own time')
+        else:
+            print('Oops, please choose "y" or "n"\n')
+         
 
 def main_quiz(list):
     """
@@ -66,6 +86,7 @@ def main_quiz(list):
             print('Oh no, that was incorrect.\n')
 
     result(score_incriment)
+
 
 """
 Dictionary of questions the game will be asking.
@@ -150,5 +171,6 @@ def append_recommend(user_feedback):
 
 
 hello()
+begin()
 main_quiz(quiz_questions)
 append_recommend('UserFeedback')

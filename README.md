@@ -8,6 +8,10 @@
 * I am using heroku to provide the cloud platform to allow users to run the programme
     * This allows user input and interactivity
 * The quiz asks for the users name, and uses this to interact with the User
+* There is a function that asks the User if they are ready to play
+    * If they click 'y' or 'Y' it progresses to the game
+    * If they click 'n' or 'N' it asks them to press 'y' when ready
+    * If they click any other button, it reverts back to the beginning
 * There are multiple choice questions, each with 4 choices
     * 1 answer is correct, 3 are incorrect
     * The programme provides feedback to the user on whether they were correct or not
@@ -35,6 +39,10 @@
 # Testing
 * Name is inputted and reflected in the print
 * If username input field is left blank, it asks the user to re-enter before progressing
+* begin() function
+    * If 'y' or 'Y', progresses as expected
+    * If 'n' or 'N', returns as expected
+    * If any other button, returns as expected 
 * All questions are asked, randomised, and not duplicated
     * If answer doesnt match a, b, c, d it does not let the user progress. It repeats the questions
 * The correct answer correctly incriment the score
