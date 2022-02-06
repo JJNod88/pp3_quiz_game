@@ -1,10 +1,33 @@
-# Quiz Game - Where Am I
+# Where am I? Quiz
+
+# Contents
+* [Introduction](#Introduction)
+* [Value](#Value)
+* [UX](#UX)
+* [Accessibility](#Accessibility)
+* [Responsiveness](#Responsiveness)
+* [Features](#Features)
+* [Technologies](#Technologies)
+* [Validation](#Validation)
+* [Testing](#Testing)
+* [Deployment](#Deployment)
+* [Credits](#Credits)
+
+# Introduction
 * Using Python I will create a web-based Quiz that users can run
 * The idea of the game will be for educational purposes, whilst providing some enjoyment  
 * I will provide a set of questions with some possible answers. The users will choose which option they believe is the correct answer.
 
+# Value
 
-# Functions
+# UX
+
+# Accessibility
+
+# Responsiveness
+
+# Features
+Below is a list of my features and functions that outline what the quiz does and is capable of:
 * I am using heroku to provide the cloud platform to allow users to run the programme
     * This allows user input and interactivity
 * The quiz asks for the users name, and uses this to interact with the User
@@ -28,13 +51,12 @@
     * The user is asked to provide feedback or updates on the quiz. This updated the userfeedback worksheet, adjacent to the username
 * The purpose of all of this is for quiz / site improvements, and improved UX and UI
 
-### Future Functionality
+### Future Features
 * I would like to provide a user with their highest score. I would need to ensure that when the username is matched, it overwrites the score providing the integer is larger (in google sheets) which is then printed back to the user. 
 
+# Technologies
 
-
-
-
+# Validation
 
 # Testing
 * Name is inputted and reflected in the print
@@ -50,7 +72,7 @@
 * the incorrect answer correctly does not incriment the score
     * It also has the right message
 
-# Bugs
+## Bugs and Fixes
 * I cant use my variable elsewhere
     * Fix - I added global to the variable name in my intro function
 * Trying to iterate through my list - says it list object is not callable
@@ -77,8 +99,9 @@
 * Trying to append two bits of information in two columns, at the moment, my score is being appending in the row below the name, i want them side by side
     * I was putting brackets round both variables, i removed the duplication and put them in the same array
 
+# Deployment
+
 # Credits 
 * Mentor, dickV_mentor - Spotted that in my append function, i was not providing the google sheets with an array, so I added brackets, and my function worked correctly
 * Course Material - linking my worksheet with GoogleSheets 
 * Tutor, Ger - Worked with me on converting my Dictionary to a list for randomising. Whilst i solved the code, the tutor gave me the confidence I needed that I was on the right track
-

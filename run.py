@@ -1,6 +1,7 @@
+import random
 import gspread
 from google.oauth2.service_account import Credentials 
-import random
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -15,6 +16,7 @@ SHEET = GSPREAD_CLIENT.open('pp3_project')
 
 user_feedback = SHEET.worksheet('userFeedback')
 user_scoring = SHEET.worksheet('userScore')
+
 
 def hello():
     """
@@ -44,7 +46,6 @@ def begin():
     print(f'So {user_name}, are you ready to play?\n')
     
     start = True
-    
     while start:
         start_game = input('Please type "y" or "n"\n').lower()
 
