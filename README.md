@@ -27,6 +27,14 @@
 * The user will have the opportunity to play again or end the game 
 
 
+
+
+# Testing
+
+* All questions are asked, rsndomised, and not duplicated
+* The answers to each question are remain correct
+
+
 # Bugs
 * I cant use my variable elsewhere
     * Fix - I added global to the variable name in my intro function

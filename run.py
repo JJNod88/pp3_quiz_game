@@ -14,7 +14,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('pp3_project')
 
 user_feedback = SHEET.worksheet('userFeedback')
-
+user_scoring = SHEET.worksheet('userScore')
 
 def hello():
     """
