@@ -67,7 +67,9 @@ def main_quiz(list):
     It incriments the score depending on the users answer.
     """
     score_incriment = 0
+    # code to randomise my quiz_questions / add both solutions in ReadMe
     for i in list:
+
         answer = ''
 
         while answer not in ['a', 'b', 'c', 'd']:
@@ -169,6 +171,9 @@ def append_recommend(user_feedback):
     user_input_feedback = input('Please enter here.\n') 
     update_worksheet = SHEET.worksheet('userFeedback')
     update_worksheet.append_row([user_name, user_input_feedback])
+
+
+# function to restart game, play again
 
 
 hello()
