@@ -177,9 +177,31 @@ def append_recommend(user_feedback):
 
 
 # function to restart game, play again
+def restart():
+    """
+    Gives the user the option to restart the game or not
+    """
+
+    print(f'{user_name}, would you like to play again?')
+
+    restart = True
+    while restart:
+        restart_game = input('Please type "y" or "n"\n').lower()
+        if restart_game == 'y':
+            begin()
+            main_quiz(quiz_questions)
+            append_recommend('UserFeedback')
+            print('Hope you enjoyed the game')
+            return True
+        elif restart_game == 'n':
+            print('No problem, see you soon') 
+            return False
+        else:
+            print('Oops, please choose "y" or "n"\n')
 
 
 hello()
 begin()
 main_quiz(quiz_questions)
 append_recommend('UserFeedback')
+restart()
