@@ -57,6 +57,12 @@ Below is a list of my features and functions that outline what the quiz does and
 ### Future Features
 * I would like to provide a user with their highest score. I would need to ensure that when the username is matched, it overwrites the score providing the integer is larger (in google sheets) which is then printed back to the user. 
 
+
+# Python Coding
+### Data Models
+### Invalid Data Handling
+### Imports
+
 # Technologies
 
 
