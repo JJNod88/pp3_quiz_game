@@ -1,4 +1,7 @@
 import random
+import colorama 
+from colorama import Fore
+colorama.init(autoreset=True)
 import gspread
 from google.oauth2.service_account import Credentials 
 
@@ -43,7 +46,7 @@ def begin():
     """
     Give the user the option to start the game or not
     """
-    print(f'So {user_name}, are you ready to play?\n')
+    print(f'{Fore.BLUE}So {user_name}, are you ready to play?\n')
     
     start = True
     while start:
@@ -75,18 +78,18 @@ def main_quiz(list):
         while answer not in ['a', 'b', 'c', 'd']:
             print(i['question'])
             for key, value in i['choices'].items():
-                print(f' {key} : {value}')
+                print(f'{key} : {value}')
 
             answer = input('Please pick your answer\n').lower()
 
             if answer not in i['choices']:
-                print('Sorry, only the letters a, b, c, d are accepted. Try again.\n')
+                print(Fore.RED + 'Sorry, only the letters a, b, c, d are accepted. Try again.\n')
 
         if answer == i['correct_choice']:
-            print('Correct! Well done.\n')
+            print(f'{Fore.GREEN}Correct! Well done.\n')
             score_incriment += 1
         else:
-            print('Oh no, that was incorrect.\n')
+            print(f'{Fore.RED}Oh no, that was incorrect.\n')
 
     result(score_incriment)
 
@@ -153,7 +156,7 @@ def result(score_incriment):
     It also sends the username and their score to Google sheets 
     which will be used for future functionality.
     """
-    print(f'Well done! You completed the quiz with a score of {score_incriment}!')
+    print(Fore.YELLOW + f'Well done! You completed the quiz with a score of {score_incriment}!')
     
     userscore_name = (f'{user_name}')
     userscore_score = (f'{score_incriment}')

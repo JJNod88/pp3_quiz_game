@@ -98,6 +98,9 @@ Below is a list of my features and functions that outline what the quiz does and
     * I changed to an f statement and captured the data from the global user_name which gets input at beginning
 * Trying to append two bits of information in two columns, at the moment, my score is being appending in the row below the name, i want them side by side
     * I was putting brackets round both variables, i removed the duplication and put them in the same array
+* I have imported Colorama to add some color and improve UX. When adding the color, it changes the entire next question to the same color i am changing the print too
+    * I needed to add init(autoreset=True)
+
 
 # Deployment
 
@@ -105,3 +108,4 @@ Below is a list of my features and functions that outline what the quiz does and
 * Mentor, dickV_mentor - Spotted that in my append function, i was not providing the google sheets with an array, so I added brackets, and my function worked correctly
 * Course Material - linking my worksheet with GoogleSheets 
 * Tutor, Ger - Worked with me on converting my Dictionary to a list for randomising. Whilst i solved the code, the tutor gave me the confidence I needed that I was on the right track
+* pypi for colorama import https://pypi.org/project/colorama/
