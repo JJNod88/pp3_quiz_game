@@ -18,9 +18,12 @@
 * The idea of the game will be for educational purposes, whilst providing some enjoyment  
 * I will provide a set of questions with some possible answers. The users will choose which option they believe is the correct answer.
 
-# Value
+# Value / UX
+### New User / Target Audience
+### Return User
+### Site Aims
+#### How the Site achieves this
 
-# UX
 
 # Accessibility
 
@@ -55,6 +58,7 @@ Below is a list of my features and functions that outline what the quiz does and
 * I would like to provide a user with their highest score. I would need to ensure that when the username is matched, it overwrites the score providing the integer is larger (in google sheets) which is then printed back to the user. 
 
 # Technologies
+
 
 # Validation
 
