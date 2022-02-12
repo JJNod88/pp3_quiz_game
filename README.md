@@ -20,10 +20,32 @@
 
 # Value / UX
 ### New User / Target Audience
-### Return User
-### Site Aims
-#### How the Site achieves this
+* Users looking to test their travel and geographical knowledge 
+* Users who enjoy teasting their knowledge and experience in a quiz game
+* Competetive people who like to achieve results and respond positivily to results based quiz/games
 
+### Return User
+* Users who have previously played the game and would like to try again and score highly
+* Who have a new idea for a question that can be added to the quiz
+* Who want to provide valuable feedback
+
+### Site Aims
+* The Quiz aims to provide an interactive and intuitive quiz experience 
+* It provides users:
+    * A platform to play an interctive quiz game
+    * Opportunity to create a username and be communicated to using the user name
+    * Compete against themselves in trying to answer all the questions correctly
+    * Opportunity to provide feedback about the quiz
+    * Opportunity to recommend new questions to improve the difficulty of the game 
+
+#### How the Site achieves this
+* The site is designed to be interactive, intuitive and simple
+* It provides clear instructions on how to play
+* It is coded to prevent the user from inputting any errors, to ensure the quiz can be completed successfully and is free of bugs
+* The code has appropriate spacing inbetween the lines and also has colour coding for improved UX
+* It has input for the user to interact with the Site
+* It has an API linked to Google Sheets to capture the data from the user and allows the quiz owner to collate and utilise the feedback 
+* There has been limited CSS and HTML in this quiz to ensure a smooth, effective command line quiz
 
 # Accessibility
 
