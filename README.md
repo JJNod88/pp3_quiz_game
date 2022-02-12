@@ -139,8 +139,27 @@ Below is a list of my features and functions that outline what the quiz does and
 
 # Python Coding
 ### Data Models
+#### Dictionary
+* A Dictionary was used to store and provide the questions and answers to the quiz
+* The dictionary was then converted into a list for additional functionality. Importing random gave the opportunity to then rsndomise the dictionary questions for improved UX
+
+#### Google Sheets API
+* A Google Sheets was incorporated into the quiz to allow the quiz to capture key data that can be:
+    * Later used to improve the quiz
+    * Utilised to provide additonal functionality to the users. For example, with the Google Sheets, a user high score can be capturted and then sent back to the quiz to relate to the user
+    * I also added this function to test my skills and learn how a real worl application can be used. 
+
 ### Invalid Data Handling
+* To ensure a positive user experience and for the quiz to work effectively and provide valid date to the google sheets, there was data handling implemented to avoid this
+    * within a while loop, to avoid the user inputting zero string, i used "" and " " to ensure the user had to input some form of string
+    * .lower() was used so that in user answers a capital or non capital letter was accepted
+    * 'not in' was used to ensure the answers from the user matched with the correct answers in the quiz. If an error was picked up, it would not accept the answer and would request a new input from the user
+
 ### Imports
+* For the quiz, three imports were implemented:
+    * Random - This allowed the array of dictionaries to be converted into a list and randomised
+    * Colorama - This gave the ability to colour the text in the quiz for improved UX
+    * Gspread - Provided the opportunity for data collection via the google api
 
 # Technologies
 
