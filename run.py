@@ -1,9 +1,9 @@
+import gspread
+from google.oauth2.service_account import Credentials
 import random
-import colorama 
+import colorama
 from colorama import Fore
 colorama.init(autoreset=True)
-import gspread
-from google.oauth2.service_account import Credentials 
 
 
 SCOPE = [
@@ -27,7 +27,7 @@ def hello():
     Collects users name with an input.
     While loop ensures they type a word in.
     """
-    global user_name 
+    global user_name
     user_name = input("Hey, please enter your username: ")
     print('\n')
 
@@ -35,19 +35,18 @@ def hello():
     while user_name == "" or user_name == " ":
         print('Oops, please enter your name')
         user_name = input("Hey, please enter your name:")
-    else: 
+    else:
         print(f'Hey {user_name}, Lets test your knowledge of the world!')
         print('We have a range of questions for you to asnwer.\n')
         print("All you have to do is select 'a', 'b', 'c', or 'd'.")
         print('You got this. Good Luck.\n')
-           
+
 
 def begin():
     """
     Give the user the option to start the game or not
     """
     print(f'{Fore.BLUE}So {user_name}, are you ready to play?\n')
-    
     start = True
     while start:
         start_game = input('Please type "y" or "n"\n').lower()
@@ -59,7 +58,7 @@ def begin():
             print('No problem, in your own time')
         else:
             print('Oops, please choose "y" or "n"\n')
-         
+
 
 def main_quiz(list):
     """
@@ -83,7 +82,8 @@ def main_quiz(list):
             answer = input('Please pick your answer\n').lower()
 
             if answer not in i['choices']:
-                print(Fore.RED + 'Sorry, only the letters a, b, c, d are accepted. Try again.\n')
+                print(Fore.RED + 'Sorry, only the letters a, b, c, d\
+                    are accepted. Try again.\n')
 
         if answer == i['correct_choice']:
             print(f'{Fore.GREEN}Correct! Well done.\n')
@@ -94,54 +94,65 @@ def main_quiz(list):
     result(score_incriment)
 
 
-"""
-Dictionary of questions the game will be asking.
-Questions and Choices have been used in my main quiz to iterate through them
-This dictionary has been converted into a list for randomising
-"""
+# Dictionary of questions the game will be asking.
+# Questions and Choices have been used in my main quiz to iterate through them
+# This dictionary has been converted into a list for randomising
 quiz_questions = [
-    {"question": "Location of the tallest human built structure in the world.\nWhere am I?: ",
-    "choices": {"a": "Japan",
+    {"question": "Location of the tallest human built structure in the world.\n\
+    Where am I?: ",
+        "choices":
+            {"a": "Japan",
                 "b": "Hong Kong",
                 "c": "Dubai",
                 "d": "Abu Dhabi"},
-                "correct_choice": "c"},
-    {"question": "A group of Pyramids beginning with the letter 'G'.\nWhich Country are they in?: ",
-    "choices": {"a": "Mexico",
+        "correct_choice": "c"},
+    {"question": "A group of Pyramids beginning with the letter 'G'.\nWhich\
+        Country are they in?: ",
+        "choices":
+            {"a": "Mexico",
                 "b": "placeholder",
                 "c": "placeholder",
                 "d": "Egypt"},
-                "correct_choice": "d"},
-    {"question": "I am on the set of Game of Thrones. Which country am I in?: ",
-    "choices": {"a": "New Zealand",
+        "correct_choice": "d"},
+    {"question": "I am on the set of Game of Thrones. Which country\
+        am I in?: ",
+        "choices":
+            {"a": "New Zealand",
                 "b": "Ireland",
                 "c": "Scotland",
                 "d": "Denmark"},
-                "correct_choice": "b"},
-    {"question": "I am north of Italy, South of Sweden. My Capital City begins with a B.\nWhat City am I in?: ",
-    "choices": {"a": "Poland",
+        "correct_choice": "b"},
+    {"question": "I am north of Italy, South of Sweden. My Capital City begins\
+        with a B.\nWhat City am I in?: ",
+        "choices":
+            {"a": "Poland",
                 "b": "Germany",
                 "c": "Bulgaria",
                 "d": "France"},
-                "correct_choice": "b"},
-    {"question": "I am in the USA. My state is famously known for my Canyon.\nWhat City am I in?: ",
-    "choices": {"a": "Arizona",
+        "correct_choice": "b"},
+    {"question": "I am in the USA. My state is famously known for my Canyon.\n\
+    What City am I in?: ",
+        "choices":
+            {"a": "Arizona",
                 "b": "Texas",
                 "c": "California",
                 "d": "Florida"},
-                "correct_choice": "a"},
+        "correct_choice": "a"},
     {"question": "'Fondue' is famously recognised for which Country?: '",
-    "choices": {"a": "Belgium",
+        "choices":
+            {"a": "Belgium",
                 "b": "France",
                 "c": "Switzerland",
                 "d": "Sweden"},
-                "correct_choice": "c"},
-    {"question": "If I was sailing between the UK and USA, what Sea am I in?: ",
-    "choices": {"a": "Atlantic.",
+        "correct_choice": "c"},
+    {"question": "If I was sailing between the UK and USA,\
+        what Sea am I in?: ",
+        "choices":
+            {"a": "Atlantic.",
                 "b": "Pacific.",
                 "c": "Indian.",
                 "d": "Arctic."},
-                "correct_choice": "a"},
+        "correct_choice": "a"},
 ]
 
 
@@ -153,11 +164,11 @@ random.shuffle(list)
 def result(score_incriment):
     """
     This provides the user with their score following the quiz.
-    It also sends the username and their score to Google sheets 
+    It also sends the username and their score to Google sheets
     which will be used for future functionality.
     """
-    print(Fore.YELLOW + f'Well done! You completed the quiz with a score of {score_incriment}!')
-    
+    print(Fore.YELLOW + f'Well done! You completed the quiz with a score of\
+        {score_incriment}!')
     userscore_name = (f'{user_name}')
     userscore_score = (f'{score_incriment}')
     update_worksheetTwo = SHEET.worksheet('userScore')
@@ -166,12 +177,12 @@ def result(score_incriment):
 
 def append_recommend(user_feedback):
     """
-    At the end of the quiz, the user is prompted to recommend a 
+    At the end of the quiz, the user is prompted to recommend a
     question or provide feedback.
-    This feeds back into the pp3 google sheets for data capture 
+    This feeds back into the pp3 google sheets for data capture
     """
     print('Hey, please leave a question recommendation or feedback here.\n')
-    user_input_feedback = input('Please enter here.\n') 
+    user_input_feedback = input('Please enter here.\n')
     update_worksheet = SHEET.worksheet('userFeedback')
     update_worksheet.append_row([user_name, user_input_feedback])
 
@@ -194,7 +205,7 @@ def restart():
             print('Hope you enjoyed the game')
             return True
         elif restart_game == 'n':
-            print('No problem, see you soon') 
+            print('No problem, see you soon')
             return False
         else:
             print('Oops, please choose "y" or "n"\n')

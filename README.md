@@ -181,6 +181,7 @@ Below is a list of my features and functions that outline what the quiz does and
     * It also has the right message
 
 ## Bugs and Fixes
+* The first bullet point is the bug. The indented second bullet point = fix:
 * I cant use my variable elsewhere
     * Fix - I added global to the variable name in my intro function
 * Trying to iterate through my list - says it list object is not callable
