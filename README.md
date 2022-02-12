@@ -18,7 +18,7 @@
 * The idea of the game will be for educational purposes, whilst providing some enjoyment  
 * I will provide a set of questions with some possible answers. The users will choose which option they believe is the correct answer.
 
-# Value / UX
+# Value
 ### New User / Target Audience
 * Users looking to test their travel and geographical knowledge 
 * Users who enjoy teasting their knowledge and experience in a quiz game
@@ -46,6 +46,63 @@
 * It has input for the user to interact with the Site
 * It has an API linked to Google Sheets to capture the data from the user and allows the quiz owner to collate and utilise the feedback 
 * There has been limited CSS and HTML in this quiz to ensure a smooth, effective command line quiz
+
+# UX
+### 1. Scope Plane
+* My [Values](#Values) highlights the key user goals and how the site aims to achieve this
+* I built a process flow on PowerPoint which you can view here []
+    * This gave me the foundation of what my quiz was trying to do and the functions needed to achieve it
+
+### 2. Scope Plane
+* The Scope plane includes the features needed to provide content, material, access and functionality for Users
+* You can find a detailed list of the features [here](#Features) 
+* Because of the project, the command line quiz involves very limited HTML and CSS, as there was a templated html structure already implemented that allowed Heroku to host the quiz
+* The content of the quiz was relevant and had a context of 'Where am I?'.
+    * Quiz questions were relateable, and their answers were deigned to be difficult for the User to answer
+* the game beginds with an introduction, provides the User a multitude of opportunities to play the game and also provide feedback for the game 
+
+### 3. Structure Plane
+* The project came with a template that allowed GitHub to interact with Heroku, for hositng the game
+    * In this case, the html and css structure was not edited - instead, the quiz itsself and the content eas structured to ensure the correct flow of the game
+* To ensure an appropriate structure, the content of the game was purposely ordered:
+    * Begins with an introduction and captures the users name
+        * This sends information to the google Sheets linked with the quiz
+    * Interacts with the user and provides them with the opportunity to progress with the quiz or not
+    * Quiz begins
+    * Results ae provided once all quiz questions have been answered
+        * This sends information to the google Sheets linked with the quiz
+    * At the point, the user is asked to provide feedback or new question opportunities
+        * This sends information to the google Sheets linked with the quiz
+    * The user is asked if they want to play again or end the game here
+
+### 4. Skeleton Plane
+* A wireframe was designed. Because I stuck with the original template, no additionalo HTML or CSS was being added, so it was easy to judge what the quiz would look like once on Heroku
+    * You can review the WireFrames here [] 
+
+### Navigation
+* The quiz being structured appropriately assisted in the navigation of the quiz
+* The quiz is nagivated through automatically by following the steps provided
+    * There are while loops to prevent the user inputting any errors, and reduces the opportunity for bugs in the code
+    * There are opportunities for the user to choose when they start and end the quiz
+
+### Functionality
+* Six functions were developed to allow the quiz to be completed
+    * In order for the site to be intuitive and be able to capture meaningful content, the first function provides both an introduction but also the ability for users to submit their username - This also begins the first meaningful data capture, as this is then sent to the Google Sheets API
+        * A while / else loop was implemented to ensure the user had to input a string and not leave it blank
+    * To increase the flow of the quiz, a begin function was created that gives the user the opportunity to progress with the quiz or not
+        * A while / if / elif loop was created to ensure this functiomn reacted depending on the users input
+    * The main_quiz function was the fundametal function for the quiz to be a quiz. It iterated through the list (data model) and provided the scoring and feedback
+        * Originally this was itrerating through a dictionary however, for improved UX and difficult the dictionary needed to be randomised, which i then imported random and transformed the dicitonary into a list to make this doable
+        * The scoring incrimentation was added to this function also
+            * This was also linked to the Goggle Sheets to capture the score for the User
+    * You will find the array of dictionary questions which i transformed into a list
+    * The next function was the score function
+        * This was the function that captured the displayed the score feedfback to the user
+            * I also linked the Google Sheets here and sent the score information direct to it
+    * Following this, was the append recommend function whereby the quiz asks the user for feedback and it transferred directly to the Google Sheets
+    * The final function is the restart function
+        * This ensured that the game didnt just end abruptly for the user. It provided them with the opportunity to restart the game, or end it 
+
 
 # Accessibility
 
@@ -133,6 +190,20 @@ Below is a list of my features and functions that outline what the quiz does and
 * I have imported Colorama to add some color and improve UX. When adding the color, it changes the entire next question to the same color i am changing the print too
     * I needed to add init(autoreset=True)
 
+### 5. Surface Plane
+* This plane sets out to the main goals, styling and format
+
+### User Friendly
+* The purpose of this quiz is to provide an intuitive, simple, interactive and meaningful experience for both the user and the owner
+    * The quiz is complication free for the User
+    * They quiz is designed and structured so that the user is taken to through the correct flow of the quiz
+    * It has clear instructions
+    * It is coded in a way that the user has input and opportunity to play the game at their leasure. It is bug free and has been designed to be simple and effective
+    * An import for color has been implemented to improved UX when a user is provided with a result to their answer
+
+### Font color and styling
+* '\n' has been used appropriately to ensure the code in the quiz has the riught amount of seperation so that is clear and easy to read
+* Color has been added to the results and feedback content so that ius easily readable and seperates it from the main wording
 
 # Deployment
 
