@@ -107,7 +107,7 @@ quiz_questions = [
                 "d": "Abu Dhabi"},
         "correct_choice": "c"},
     {"question": "A group of Pyramids beginning with the letter 'G'.\nWhich\
-        Country are they in?: ",
+    Country are they in?: ",
         "choices":
             {"a": "Mexico",
                 "b": "placeholder",
@@ -115,7 +115,7 @@ quiz_questions = [
                 "d": "Egypt"},
         "correct_choice": "d"},
     {"question": "I am on the set of Game of Thrones. Which country\
-        am I in?: ",
+    am I in?: ",
         "choices":
             {"a": "New Zealand",
                 "b": "Ireland",
@@ -123,7 +123,7 @@ quiz_questions = [
                 "d": "Denmark"},
         "correct_choice": "b"},
     {"question": "I am north of Italy, South of Sweden. My Capital City begins\
-        with a B.\nWhat City am I in?: ",
+    with a B.\nWhat City am I in?: ",
         "choices":
             {"a": "Poland",
                 "b": "Germany",
@@ -138,7 +138,7 @@ quiz_questions = [
                 "c": "California",
                 "d": "Florida"},
         "correct_choice": "a"},
-    {"question": "'Fondue' is famously recognised for which Country?: '",
+    {"question": "'Fondue' is famously recognised for which Country?:'",
         "choices":
             {"a": "Belgium",
                 "b": "France",
@@ -146,7 +146,7 @@ quiz_questions = [
                 "d": "Sweden"},
         "correct_choice": "c"},
     {"question": "If I was sailing between the UK and USA,\
-        what Sea am I in?: ",
+    what Sea am I in?: ",
         "choices":
             {"a": "Atlantic.",
                 "b": "Pacific.",
@@ -168,7 +168,7 @@ def result(score_incriment):
     which will be used for future functionality.
     """
     print(Fore.YELLOW + f'Well done! You completed the quiz with a score of\
-        {score_incriment}!')
+    {score_incriment}!')
     userscore_name = (f'{user_name}')
     userscore_score = (f'{score_incriment}')
     update_worksheet_two = SHEET.worksheet('userScore')
