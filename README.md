@@ -142,8 +142,14 @@ Below is a list of my features and functions that outline what the quiz does and
     * If they click any other button, it reverts back to the beginning
     * You can find the invalid data handling images [here](#Python_Coding)
 
+* y
 ![Image-of-ystart](/assets/images/y_start.png)
+
+* n
 ![Image-of-nstart](/assets/images/n_start.png)
+
+* no then yes
+
 ![Image-of-nystart](/assets/images/no_yes_start.png)
 
 * There are multiple choice questions, each with 4 choices
@@ -152,6 +158,7 @@ Below is a list of my features and functions that outline what the quiz does and
     * The questions are randomised with no duplicated questions
 
 ![Image-of-correcta](/assets/images/correct_answer.png)
+
 ![Image-of-incorrecta](/assets/images/incorrect_answer.png)
 
 * There is a score incrimentor that collates the score
@@ -167,8 +174,14 @@ Below is a list of my features and functions that outline what the quiz does and
 * The user will have the opportunity to play again or end the game 
 
 ![Image-of-restart](/assets/images/restart_yn.png)
+
+* yes
+
 ![Image-of-yrestart](/assets/images/yes_restart.png)
-![Image-of-nrestart](/assets/images/no_restart_yn.png)
+
+* no
+
+![Image-of-nrestart](/assets/images/no_restart.png)
 
 ### API to Google Sheets
 * The quiz is linked with a google sheets for data capture
