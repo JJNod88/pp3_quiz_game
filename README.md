@@ -127,32 +127,45 @@
 # Features
 Below is a list of my features and functions that outline what the quiz does and is capable of:
 * I am using heroku to provide the cloud platform to allow users to run the programme
-    * This allows user input and interactivity and introduces the game
-    * The quiz asks for the users name, and uses this to interact with the User
+* This allows user input and interactivity and introduces the game
+* The quiz asks for the users name, and uses this to interact with the User
+
 ![Image-of-heroku_start](/assets/images/start_name.png)
+
 * From this, the quiz and its instructions is introduced to the user, using their user_name
+
 ![Image-of-instructions](/assets/images/intro_yn.png)
+
 * There is a function that asks the User if they are ready to play
     * If they click 'y' or 'Y' it progresses to the game
     * If they click 'n' or 'N' it asks them to press 'y' when ready
     * If they click any other button, it reverts back to the beginning
     * You can find the invalid data handling images [here](#Python_Coding)
+
 ![Image-of-ystart](/assets/images/y_start.png)
 ![Image-of-nstart](/assets/images/n_start.png)
 ![Image-of-nystart](/assets/images/no_yes_start.png)
+
 * There are multiple choice questions, each with 4 choices
     * 1 answer is correct, 3 are incorrect
     * The programme provides feedback to the user on whether they were correct or not
     * The questions are randomised with no duplicated questions
+
 ![Image-of-correcta](/assets/images/correct_answer.png)
 ![Image-of-incorrecta](/assets/images/incorrect_answer.png)
+
 * There is a score incrimentor that collates the score
     * Provides a score at the end of the quiz
+
 ![Image-of-score](/assets/images/complete_score.png)
+
 * The user has the opportunity to provide feedback to the site / quiz owner, which send to a Google Sheets
     * You can find what this appends to the google sheets in the [Google_Sheets_section](#Python_Coding)
+
 ![Image-of-feedback](/assets/images/complete_score.png)
+
 * The user will have the opportunity to play again or end the game 
+
 ![Image-of-restart](/assets/images/restart_yn.png)
 ![Image-of-yrestart](/assets/images/yes_restart.png)
 ![Image-of-nrestart](/assets/images/no_restart_yn.png)
@@ -161,9 +174,13 @@ Below is a list of my features and functions that outline what the quiz does and
 * The quiz is linked with a google sheets for data capture
 * The username at the beginning is captured and stored in a worksheet called userFeedback & userScore
 * When the quiz is completed and a score provided, this score is then updated adjacent to the users username in the userScore worksheet
+
 ![Image-of-gsscore](/assets/images/google_sheets_score.png)
+
 * The user is asked to provide feedback or updates on the quiz. This updated the userfeedback worksheet, adjacent to the username
+
 ![Image-of-gsfeedback](/assets/images/google_sheets_feedback.png)
+
 * The purpose of all of this is for quiz / site improvements, and improved UX and UI
 
 ### Future Features
@@ -185,13 +202,21 @@ Below is a list of my features and functions that outline what the quiz does and
 ### Invalid Data Handling
 * To ensure a positive user experience and for the quiz to work effectively and provide valid date to the google sheets, there was data handling implemented to avoid this
 * Within a while loop, to avoid the user inputting zero string, i used "" and " " to ensure the user had to input some form of string
+
 ![Image-of-invalid_user](/assets/images/invalid_name.png)
+
 * .lower() was used so that in user answers a capital or non capital letter was accepted
+
 ![Image-of-capital](/assets/images/capital_accepted.png)
+
 * 'not in' was used to ensure the answers from the user matched with the correct answers in the quiz. If an error was picked up, it would not accept the answer and would request a new input from the user
+
 * If any other answer other than 'y' or 'n' for my loops was inputted, it would provide an error
+
 ![Image-of-invalidyn](/assets/images/invalid_yn.png)
+
 * If another character other than a, b, c, or d it provides an error
+
 ![Image-of-invalid-answer](/assets/images/invalid_answer.png)
 
 ### Imports
@@ -238,11 +263,13 @@ Below is a list of my features and functions that outline what the quiz does and
 ### Pep8
 * The code was run through PeP8 to ensure it was written well with no bugs
 * It passed with zero bugs or notifications
+
 ![Image-of-pep8](/assets/images/pep8.png)
 
 ### Lighthouse
 * To ensure the quiz was running efficiently, I ran it through Google Developers Lighthouse Function
 * It scored well in performance and accessibility
+
 ![Image-of-lighthouse](/assets/images/lighthouse.png)
 
 # Bugs
