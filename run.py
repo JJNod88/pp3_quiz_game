@@ -27,8 +27,9 @@ def hello():
     Collects users name with an input.
     While loop ensures they type a word in.
     """
+    print("Welcome to the 'WHERE AM I?' Quiz\n"
     global user_name
-    user_name = input("Hey, please enter your username: ")
+    user_name = input("Please enter your username: ")
     print('\n')
 
     # If the user name leaves this blank, it prompts them to enter
@@ -98,24 +99,24 @@ def main_quiz(list):
 # Questions and Choices have been used in my main quiz to iterate through them
 # This dictionary has been converted into a list for randomising
 quiz_questions = [
-    {"question": "Location of the tallest human built structure in the world.\n\
-    Where am I?: ",
+    {"question": "Location of the tallest human built structure in the world.\
+Where am I?: ",
         "choices":
             {"a": "Japan",
                 "b": "Hong Kong",
                 "c": "Dubai",
                 "d": "Abu Dhabi"},
         "correct_choice": "c"},
-    {"question": "A group of Pyramids beginning with the letter 'G'.\nWhich\
-    Country are they in?: ",
+    {"question": "A group of Pyramids beginning with the letter 'G'.Which\
+Country are they in?: ",
         "choices":
             {"a": "Mexico",
-                "b": "placeholder",
-                "c": "placeholder",
+                "b": "Cairo",
+                "c": "Turkey",
                 "d": "Egypt"},
         "correct_choice": "d"},
     {"question": "I am on the set of Game of Thrones. Which country\
-    am I in?: ",
+am I in?: ",
         "choices":
             {"a": "New Zealand",
                 "b": "Ireland",
@@ -123,15 +124,15 @@ quiz_questions = [
                 "d": "Denmark"},
         "correct_choice": "b"},
     {"question": "I am north of Italy, South of Sweden. My Capital City begins\
-    with a B.\nWhat City am I in?: ",
+with a B. What City am I in?: ",
         "choices":
             {"a": "Poland",
                 "b": "Germany",
                 "c": "Bulgaria",
                 "d": "France"},
         "correct_choice": "b"},
-    {"question": "I am in the USA. My state is famously known for my Canyon.\n\
-    What City am I in?: ",
+    {"question": "I am in the USA. My state is famously known for my Canyon.\
+What City am I in?: ",
         "choices":
             {"a": "Arizona",
                 "b": "Texas",
@@ -146,7 +147,7 @@ quiz_questions = [
                 "d": "Sweden"},
         "correct_choice": "c"},
     {"question": "If I was sailing between the UK and USA,\
-    what Sea am I in?: ",
+what Sea would I be in?: ",
         "choices":
             {"a": "Atlantic.",
                 "b": "Pacific.",
