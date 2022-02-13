@@ -37,8 +37,8 @@ def hello():
         print('Oops, please enter your name')
         user_name = input("Hey, please enter your name:")
     else:
-        print(f'Hey {user_name}, Lets test your knowledge of the world!')
-        print('We have a range of questions for you to asnwer.\n')
+        print(f"Hey {user_name}, Let's test your knowledge of the world!")
+        print('We have a range of questions for you to answer.\n')
         print("All you have to do is select 'a', 'b', 'c', or 'd'.")
         print('You got this. Good Luck.\n')
 
@@ -99,16 +99,16 @@ def main_quiz(list):
 # Questions and Choices have been used in my main quiz to iterate through them
 # This dictionary has been converted into a list for randomising
 quiz_questions = [
-    {"question": "Location of the tallest human built structure in the world.\
-Where am I?: ",
+    {"question": "I'm on top of the tallest built structure in the world.\
+ Where am I?:",
         "choices":
             {"a": "Japan",
                 "b": "Hong Kong",
                 "c": "Dubai",
                 "d": "Abu Dhabi"},
         "correct_choice": "c"},
-    {"question": "A group of Pyramids beginning with the letter 'G'.Which\
-Country are they in?: ",
+    {"question": "A group of Pyramids beginning with the letter 'G'. Which\
+ Country are they in?:",
         "choices":
             {"a": "Mexico",
                 "b": "Cairo",
@@ -116,7 +116,7 @@ Country are they in?: ",
                 "d": "Egypt"},
         "correct_choice": "d"},
     {"question": "I am on the set of Game of Thrones. Which country\
-am I in?: ",
+ am I in?: ",
         "choices":
             {"a": "New Zealand",
                 "b": "Ireland",
@@ -124,7 +124,7 @@ am I in?: ",
                 "d": "Denmark"},
         "correct_choice": "b"},
     {"question": "I am north of Italy, South of Sweden. My Capital City begins\
-with a B. What City am I in?: ",
+ with a B. What City am I in?:",
         "choices":
             {"a": "Poland",
                 "b": "Germany",
@@ -132,14 +132,14 @@ with a B. What City am I in?: ",
                 "d": "France"},
         "correct_choice": "b"},
     {"question": "I am in the USA. My state is famously known for my Canyon.\
-What City am I in?: ",
+ What City am I in?:",
         "choices":
             {"a": "Arizona",
                 "b": "Texas",
                 "c": "California",
                 "d": "Florida"},
         "correct_choice": "a"},
-    {"question": "'Fondue' is famously recognised for which Country?:'",
+    {"question": "'Fondue' is famously recognised for which Country?:",
         "choices":
             {"a": "Belgium",
                 "b": "France",
@@ -147,7 +147,7 @@ What City am I in?: ",
                 "d": "Sweden"},
         "correct_choice": "c"},
     {"question": "If I was sailing between the UK and USA,\
-what Sea would I be in?: ",
+ what Sea would I be in?:",
         "choices":
             {"a": "Atlantic.",
                 "b": "Pacific.",
@@ -169,7 +169,7 @@ def result(score_incriment):
     which will be used for future functionality.
     """
     print(Fore.YELLOW + f'Well done! You completed the quiz with a score of\
-    {score_incriment}!')
+ {score_incriment}!')
     userscore_name = (f'{user_name}')
     userscore_score = (f'{score_incriment}')
     update_worksheet_two = SHEET.worksheet('userScore')
@@ -194,7 +194,7 @@ def restart():
     Gives the user the option to restart the game or not
     """
 
-    print(f'{user_name}, would you like to play again?')
+    print(f'{user_name}, would you like to play again?\n')
 
     restart = True
     while restart:
