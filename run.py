@@ -84,7 +84,7 @@ def main_quiz(list):
 
             if answer not in i['choices']:
                 print(Fore.RED + 'Sorry, only the letters a, b, c, d\
-                    are accepted. Try again.\n')
+ are accepted. Try again.\n')
 
         if answer == i['correct_choice']:
             print(f'{Fore.GREEN}Correct! Well done.\n')
