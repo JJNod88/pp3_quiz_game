@@ -183,7 +183,7 @@ def append_recommend(user_feedback):
     This feeds back into the pp3 google sheets for data capture
     """
     print('Hey, please leave a question recommendation or feedback here.\n')
-    user_input_feedback = input('Please enter here.\n')
+    user_input_feedback = input('Please enter here:\n')
     update_worksheet = SHEET.worksheet('userFeedback')
     update_worksheet.append_row([user_name, user_input_feedback])
 
