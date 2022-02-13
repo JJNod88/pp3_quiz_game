@@ -27,7 +27,7 @@ def hello():
     Collects users name with an input.
     While loop ensures they type a word in.
     """
-    print("Welcome to the 'WHERE AM I?' Quiz\n"
+    print("Welcome to the 'WHERE AM I?' Quiz\n")
     global user_name
     user_name = input("Please enter your username: ")
     print('\n')
