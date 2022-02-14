@@ -325,6 +325,17 @@ Below is a list of my features and functions that outline what the quiz does and
 
 * There are no remaining Bugs 
 
+### GitPod reccomendation
+* In my hello() function, in my while loop, GitPod recommends using break:
+
+![Image-of-break_message](/assets/images/break_message.png)
+
+* When I add the break, I get the following:
+
+![Image-of-break_error](/assets/images/break_error.png)
+
+* Because my Quiz works without the break, I left it blank after searching the web and speaking to my Mentor
+
 # Deployment
 * As best practice, deployment was completed at the very beginning to allow testing during the development process
 * Please see below instructions on how the project was deployed via Heroku from my GitPod. 
