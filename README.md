@@ -51,12 +51,16 @@
 
 # UX
 ### 1. Scope Plane
-* My [Values](#Values) highlights the key user goals and how the site aims to achieve this
+* My [Values](#Value) highlights the key user goals and how the site aims to achieve this
 * I built a process flow on PowerPoint which you can view here []
     * This gave me the foundation of what my quiz was trying to do and the functions needed to achieve it
 
 ### 2. Scope Plane
 * The Scope plane includes the features needed to provide content, material, access and functionality for Users
+* I designed a basic process flow chart to look at how the quiz was going to work, and what functions i needed. There is ofcourse more complexity behind this flow, however it was important to have a foundation to build from:
+
+![Image-of-flow](/assets/images/process_flow.png)
+
 * You can find a detailed list of the features [here](#Features) 
 * Because of the project, the command line quiz involves very limited HTML and CSS, as there was a templated html structure already implemented that allowed Heroku to host the quiz
 * The content of the quiz was relevant and had a context of 'Where am I?'.
@@ -78,7 +82,7 @@
     * The user is asked if they want to play again or end the game here
 
 ### 4. Skeleton Plane
-* A wireframe was designed. Because I stuck with the original template, no additionalo HTML or CSS was being added, so it was easy to judge what the quiz would look like once on Heroku
+* A process flow was designed to. Because I stuck with the original template, no additional HTML or CSS was being added, so it was easy to judge what the quiz would look like once on Heroku
     * You can review the WireFrames here [] 
 
 ### Navigation

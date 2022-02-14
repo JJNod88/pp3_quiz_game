@@ -27,6 +27,15 @@ def hello():
     Collects users name with an input.
     While loop ensures they type a word in.
     """
+    print(
+        """
+__      ___                               ___ ___    ___       _
+\ \    / / |_  ___ _ _ ___   __ _ _ __   |_ _|__ \  / _ \ _  _(_)___
+ \ \/\/ /| ' \/ -_) '_/ -_) / _` | '  \   | |  /_/ | (_) | || | |_ /
+  \_/\_/ |_||_\___|_| \___| \__,_|_|_|_| |___|(_)   \__\_\\_,_|_/__|
+
+        """)
+
     print("Welcome to the 'WHERE AM I?' Quiz\n")
     global user_name
     user_name = input("Please enter your username: ")
@@ -169,7 +178,7 @@ def result(score_incriment):
     which will be used for future functionality.
     """
     print(Fore.YELLOW + f'Well done! You completed the quiz with a score of\
- {score_incriment}!')
+ {score_incriment} out of 7!')
     userscore_name = (f'{user_name}')
     userscore_score = (f'{score_incriment}')
     update_worksheet_two = SHEET.worksheet('userScore')
