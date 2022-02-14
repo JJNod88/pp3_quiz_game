@@ -320,13 +320,38 @@ Below is a list of my features and functions that outline what the quiz does and
     * I was putting brackets round both variables, i removed the duplication and put them in the same array
 * I have imported Colorama to add some color and improve UX. When adding the color, it changes the entire next question to the same color i am changing the print too
     * I needed to add init(autoreset=True)
+* Restart function stops running after one restart
+    * I had return true in the IF statement. Removing this fixed the problem
 
 * There are no remaining Bugs 
 
 # Deployment
+* As best practice, deployment was completed at the very beginning to allow testing during the development process
+* Please see below instructions on how the project was deployed via Heroku from my GitPod. 
+
+* Create a GitHub repository
+* Remove any un-used imports from the run.py file
+* In order for input methods to work properly in the deployed mock terminal, add a new line character at the end of the text, inside the input method.
+* when creating a new list of requirements, you type in the terminal:  pip3 freeze > requirements.txt
+* Go to the Heroku website
+* In your Heroku account, click ‘Create New App’ on the Dashboard
+* Select your region (Europe) and give your project a unique name
+* Click ‘Create App’ to create your app
+* Find the setting tab to access and set up 'Config Vars'(this is required if using a creds.json file).
+* Click ‘Add Buildpack’ and select Python - ‘Save Changes’.
+* you will need to select ‘NodeJS’ and save
+* Please note, Buildpacks must be in order, so for this project Python needs to be first, NodeJS second
+* Locate the 'Deploy' tab 
+* Select ‘GitHub' as the deployment method to link to your GitHub repository
+* Search for the required repository and then connect it
+* Click ‘Enable Automatic Deploys’
+* In the 'Manual Deploy Section' select 'main' branch and then select ‘Deploy Branch’ to deploy
+* Now this is deployed you can view your project by clicking ‘view’
 
 # Credits 
-* Mentor, dickV_mentor - Spotted that in my append function, i was not providing the google sheets with an array, so I added brackets, and my function worked correctly
+* Mentor, dickV_mentor 
+    * Spotted that in my append function, i was not providing the google sheets with an array, so I added brackets, and my function worked correctly
+    * Highlighted In my restart function that I had a print in the wrong place and to remove 'Return True' in my IF statement so that the game could continue to run
 * Course Material - linking my worksheet with GoogleSheets 
 * Tutor, Ger - Worked with me on converting my Dictionary to a list for randomising. Whilst i solved the code, the tutor gave me the confidence I needed that I was on the right track
 * pypi for colorama import https://pypi.org/project/colorama/
