@@ -328,3 +328,6 @@ Below is a list of my features and functions that outline what the quiz does and
 * Course Material - linking my worksheet with GoogleSheets 
 * Tutor, Ger - Worked with me on converting my Dictionary to a list for randomising. Whilst i solved the code, the tutor gave me the confidence I needed that I was on the right track
 * pypi for colorama import https://pypi.org/project/colorama/
+
+### Media
+* [patorjk](http://patorjk.com/) For the ASCII Art
