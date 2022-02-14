@@ -20,6 +20,8 @@
 * The idea of the game will be for educational purposes, whilst providing some enjoyment  
 * I will provide a set of questions with some possible answers. The users will choose which option they believe is the correct answer.
 
+![Image-of-design](/assets/images/responsive.png)
+
 # Value
 ### New User / Target Audience
 * Users looking to test their travel and geographical knowledge 
@@ -134,7 +136,7 @@ Below is a list of my features and functions that outline what the quiz does and
 * This allows user input and interactivity and introduces the game
 * The quiz asks for the users name, and uses this to interact with the User
 
-![Image-of-heroku_start](/assets/images/start_name.png)
+![Image-of-heroku_start](/assets/images/start.png)
 
 * From this, the quiz and its instructions is introduced to the user, using their user_name
 
@@ -331,3 +333,4 @@ Below is a list of my features and functions that outline what the quiz does and
 
 ### Media
 * [patorjk](http://patorjk.com/) For the ASCII Art
+* [Am-I-Responsive]()
