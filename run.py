@@ -213,7 +213,7 @@ def restart():
             begin()
             main_quiz(quiz_questions)
             append_recommend('UserFeedback')
-            print('Hope you enjoyed the game')
+            print('Hope you enjoyed the game.')
         elif restart_game == 'n':
             print('No problem, thanks for playing.')
             return False

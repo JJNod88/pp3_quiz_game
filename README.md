@@ -4,8 +4,6 @@
 * [Introduction](#Introduction)
 * [Value](#Value)
 * [UX](#UX)
-* [Accessibility](#Accessibility)
-* [Responsiveness](#Responsiveness)
 * [Features](#Features)
 * [Python-Coding](#Python_Coding)
 * [Technologies](#Technologies)
@@ -17,8 +15,10 @@
 
 # Introduction
 * Using Python I will create a web-based Quiz that users can run
-* The idea of the game will be for educational purposes, whilst providing some enjoyment  
-* I will provide a set of questions with some possible answers. The users will choose which option they believe is the correct answer.
+* The idea of the game will be for educational purposes, whilst providing some enjoyment for users to test their world knowledge 
+* I will provide a set of questions with some possible answers. The users will choose which option they believe is the correct answer
+* The user will receive a score at the end of the quiz, and have opportunity to provide feedback or new questions
+* The quiz is linked to a google sheets so that the information from the quiz is stored and can be used in the future 
 
 ![Image-of-design](/assets/images/responsive.png)
 
@@ -126,10 +126,6 @@
 * '\n' has been used appropriately to ensure the code in the quiz has the right amount of separation so that is clear and easy to read
 * Color has been added to the results and feedback content so that is easily readable and separates it from the main wording
 
-# Accessibility
-
-# Responsiveness
-
 # Features
 Below is a list of my features and functions that outline what the quiz does and is capable of:
 * I am using Heroku to provide the cloud platform to allow users to run the programme
@@ -190,20 +186,26 @@ Below is a list of my features and functions that outline what the quiz does and
 ![Image-of-nrestart](/assets/images/no_restart.png)
 
 ### API to Google Sheets
-* The quiz is linked with a google sheets for data capture
-* The username at the beginning is captured and stored in a worksheet called userFeedback & userScore
+* The quiz is linked with a google sheets for data capture called pp3_project
+* The username at the beginning and feedback later on is captured and appended in a worksheet called userFeedback
 * When the quiz is completed and a score provided, this score is then updated adjacent to the users username in the userScore worksheet
+
+* This is the code that directly links to the sheet and worksheet
+
+![Image-of-gssheet](/assets/images/google_sheets_link.png)
+
+* This is the score worksheet being appended automatically from the quiz:
 
 ![Image-of-gsscore](/assets/images/google_sheets_score.png)
 
-* The user is asked to provide feedback or updates on the quiz. This updated the user feedback worksheet, adjacent to the username
+* The user is asked to provide feedback or updates on the quiz. This updated the user feedback worksheet, adjacent to the username:
 
 ![Image-of-gsfeedback](/assets/images/google_sheets_feedback.png)
 
 * The purpose of all of this is for quiz / site improvements, and improved UX and UI
 
 ### Future Features
-* I would like to provide a user with their highest score. I would need to ensure that when the username is matched, it overwrites the score providing the integer is larger (in google sheets) which is then printed back to the user. 
+* I would like to provide a user with their highest score. I would need to ensure that when the username is matched, it overwrites the score providing the integer is larger (in google sheets) which is then printed back to the user
 
 # Python Coding
 ## Data Models
@@ -363,10 +365,13 @@ Below is a list of my features and functions that outline what the quiz does and
 * Mentor, dickV_mentor 
     * Spotted that in my append function, i was not providing the google sheets with an array, so I added brackets, and my function worked correctly
     * Highlighted In my restart function that I had a print in the wrong place and to remove 'Return True' in my IF statement so that the game could continue to run
-* Course Material - linking my worksheet with GoogleSheets 
-* Tutor, Ger - Worked with me on converting my Dictionary to a list for randomising. Whilst i solved the code, the tutor gave me the confidence I needed that I was on the right track
-* pypi for colorama import https://pypi.org/project/colorama/
+* Love Sandwiches provided material in order for me to set up the quiz
+    * The insight into setting up the google sheets was helpful
+* Course Material for the correct coding
+* Tutor, Ger - Worked with me on converting my Dictionary to a list for randomising. Whilst I solved the code, the tutor gave me the confidence I needed that I was on the right track
 
-### Media
-* [patorjk](http://patorjk.com/) For the ASCII Art
-* [Am-I-Responsive]()
+### Media & Resources
+* [patorjk](http://patorjk.com/) for the ASCII Art and how to implement
+* [Am-I-Responsive](http://ami.responsivedesign.is/#)
+* [pypi](https://pypi.org/project/colorama/) for my colorama import 
+* [Geeks-for-geeks](https://www.geeksforgeeks.org/python-dictionary/) for help with the dictionary
