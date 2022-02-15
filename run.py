@@ -81,7 +81,6 @@ def main_quiz(list):
     It incriments the score depending on the users answer.
     """
     score_incriment = 0
-    # code to randomise my quiz_questions / add both solutions in ReadMe
     for i in list:
 
         answer = ''

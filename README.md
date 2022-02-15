@@ -372,6 +372,6 @@ Below is a list of my features and functions that outline what the quiz does and
 
 ### Media & Resources
 * [patorjk](http://patorjk.com/) for the ASCII Art and how to implement
-* [Am-I-Responsive](http://ami.responsivedesign.is/#)
+* [Am-I-Responsive](http://ami.responsivedesign.is/#) for the introduction image
 * [pypi](https://pypi.org/project/colorama/) for my colorama import 
 * [Geeks-for-geeks](https://www.geeksforgeeks.org/python-dictionary/) for help with the dictionary
